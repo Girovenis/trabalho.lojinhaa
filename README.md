@@ -99,7 +99,7 @@ Um produto pode estar presente em vários pedidos diferentes.
 
 ## 🧠 Decisões de Modelagem
 
-* Algumas decisões importantes foram tomadas durante a construção do DER:
+ Algumas decisões importantes foram tomadas durante a construção do DER:
 
 * A separação de **Item do Pedido** evita redundância e permite maior flexibilidade no sistema.
 * O armazenamento do **preço unitário** no item garante que alterações futuras no preço do produto não afetem pedidos antigos.
