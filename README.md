@@ -51,7 +51,6 @@ Neste repositório, você encontrará a seguinte estrutura de arquivos:
 <p align="center">
   <img src="Imagens/DiagramaLojinha_DER.drawio.png" alt="Diagrama DER" width="600">
 </p>
----
 
 ## 📦 Entidades Principais
 
