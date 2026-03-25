@@ -92,6 +92,7 @@ Um produto pode estar presente em vários pedidos diferentes.
 ## 🔄 Relacionamento Muitos-para-Muitos
 
  O relacionamento entre Pedido e Produto é do tipo muitos-para-muitos, já que um pedido pode conter vários produtos e, ao mesmo tempo, um produto pode estar presente em diversos pedidos. Para resolver essa relação, foi criada a entidade Item do Pedido, que atua como uma tabela intermediária.
+ 
  Essa entidade permite registrar, de forma organizada, quais produtos compõem cada pedido, incluindo informações importantes como a quantidade e o preço unitário no momento da compra. Além de garantir a integridade dos dados, essa abordagem também preserva o histórico das transações, evitando que alterações futuras no preço dos produtos afetem pedidos já realizados.
 
 ---
