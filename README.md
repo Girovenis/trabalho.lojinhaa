@@ -43,9 +43,9 @@ Neste repositório, você encontrará a seguinte estrutura de arquivos:
 
 ## 🗄️ Diagrama Entidade-Relacionamento (DER)
 
-*O Diagrama Entidade-Relacionamento (DER) representa a estrutura de dados do sistema, definindo como as informações são organizadas, armazenadas e relacionadas dentro da lojinha online.
+* O Diagrama Entidade-Relacionamento (DER) representa a estrutura de dados do sistema, definindo como as informações são organizadas, armazenadas e relacionadas dentro da lojinha online.
 
-*Este modelo foi projetado para refletir o fluxo real de uma compra em um e-commerce, desde o cadastro do cliente até o pagamento do pedido.
+* Este modelo foi projetado para refletir o fluxo real de uma compra em um e-commerce, desde o cadastro do cliente até o pagamento do pedido.
 
 ---
 <p align="center">
@@ -55,7 +55,7 @@ Neste repositório, você encontrará a seguinte estrutura de arquivos:
 
 ## 📦 Entidades Principais
 
-*O sistema é composto pelas seguintes entidades:
+* O sistema é composto pelas seguintes entidades:
 
 * **Cliente**
 Armazena as informações dos usuários que realizam compras no sistema.
@@ -77,7 +77,7 @@ Ela armazena quais produtos foram comprados, em qual quantidade e por qual valor
 
 ## 🔗 Relacionamentos e Cardinalidades
 
-*O DER define como essas entidades se conectam:
+* O DER define como essas entidades se conectam:
 
 * **Cliente → Pedido (1:N)**
 Um cliente pode realizar vários pedidos, mas cada pedido pertence a apenas um cliente.
@@ -92,14 +92,14 @@ Um produto pode estar presente em vários pedidos diferentes.
 
 ## 🔄 Relacionamento Muitos-para-Muitos
 
-*O relacionamento entre Pedido e Produto é do tipo muitos-para-muitos, já que um pedido pode conter vários produtos e, ao mesmo tempo, um produto pode estar presente em diversos pedidos. Para resolver essa relação, foi criada a entidade Item do Pedido, que atua como uma tabela intermediária.
-*Essa entidade permite registrar, de forma organizada, quais produtos compõem cada pedido, incluindo informações importantes como a quantidade e o preço unitário no momento da compra. Além de garantir a integridade dos dados, essa abordagem também preserva o histórico das transações, evitando que alterações futuras no preço dos produtos afetem pedidos já realizados.
+* O relacionamento entre Pedido e Produto é do tipo muitos-para-muitos, já que um pedido pode conter vários produtos e, ao mesmo tempo, um produto pode estar presente em diversos pedidos. Para resolver essa relação, foi criada a entidade Item do Pedido, que atua como uma tabela intermediária.
+* Essa entidade permite registrar, de forma organizada, quais produtos compõem cada pedido, incluindo informações importantes como a quantidade e o preço unitário no momento da compra. Além de garantir a integridade dos dados, essa abordagem também preserva o histórico das transações, evitando que alterações futuras no preço dos produtos afetem pedidos já realizados.
 
 ---
 
 ## 🧠 Decisões de Modelagem
 
-*Algumas decisões importantes foram tomadas durante a construção do DER:
+* Algumas decisões importantes foram tomadas durante a construção do DER:
 
 * A separação de **Item do Pedido** evita redundância e permite maior flexibilidade no sistema.
 * O armazenamento do **preço unitário** no item garante que alterações futuras no preço do produto não afetem pedidos antigos.
