@@ -37,7 +37,7 @@ Neste repositório, você encontrará a seguinte estrutura de arquivos:
 
 ## Principais Decisões Arquiteturais e Padrões de Projeto
 
-* Inserir aqui a justificativa do uso do padrão Singleton no sistema de pagamento, conforme definido na divisão do trabalho).*
+* Inserir aqui a justificativa do uso do padrão Singleton no sistema de pagamento, conforme definido na divisão do trabalho).
 
 ---
 
