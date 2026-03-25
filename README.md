@@ -41,6 +41,38 @@ Neste repositório, você encontrará a seguinte estrutura de arquivos:
 
 ---
 
+## Descrição do Fluxo do Diagrama de Atividades
+
+O diagrama representa o funcionamento de uma lojinha online, abrangendo desde o acesso inicial do usuário até a conclusão do processo de compra.
+
+### 1. Início e Acesso
+O processo tem início com o acesso do cliente ao sistema, seguido da navegação pelos produtos disponíveis.
+
+### 2. Seleção de Produtos
+O cliente seleciona os produtos desejados e os adiciona ao carrinho de compras. Na sequência, o sistema verifica se o usuário deseja continuar realizando compras:
+- Em caso afirmativo, o fluxo retorna à etapa de navegação e seleção de produtos.
+- Caso contrário, o usuário é direcionado para a etapa de finalização da compra.
+
+### 3. Finalização da Compra
+Nesta etapa, o cliente fornece suas informações pessoais, como dados de login e endereço, além de selecionar a forma de pagamento.
+
+### 4. Processamento do Pagamento
+O sistema encaminha as informações fornecidas ao módulo responsável pelo processamento do pagamento, que realiza a validação dos dados.
+
+### 5. Decisão do Pagamento
+Após a verificação, ocorre a decisão quanto ao status do pagamento:
+- Se o pagamento for aprovado:
+  - O sistema exibe uma mensagem de confirmação.
+  - O processo é concluído com sucesso.
+- Se o pagamento for recusado:
+  - O sistema apresenta uma mensagem de erro.
+  - O usuário poderá realizar uma nova tentativa ou encerrar o processo.
+
+### 6. Encerramento
+O fluxo é finalizado após a confirmação do pagamento, independentemente de seu resultado.
+
+---
+
 ## Diagrama Entidade-Relacionamento (DER)
 
  O Diagrama Entidade-Relacionamento (DER) representa a estrutura de dados do sistema, definindo como as informações são organizadas, armazenadas e relacionadas dentro da lojinha online.
