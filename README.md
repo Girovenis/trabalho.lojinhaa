@@ -1,6 +1,6 @@
-# 🛒 Simulação de Lojinha Online (Arquitetura Monolítica)
+# Simulação de Lojinha Online (Arquitetura Monolítica)
 
-## 📌 Introdução e Contexto do Trabalho
+## Introdução e Contexto do Trabalho
 
 Este projeto foi desenvolvido como uma atividade prática com o objetivo de evoluir a modelagem de um sistema de e-commerce (Lojinha Online) a partir de um Diagrama de Contexto (N0) inicial. 
 
@@ -12,7 +12,7 @@ O foco do trabalho abrange desde a modelagem conceitual e lógica do sistema at�
 
 ---
 
-## 📖 Conceitos Fundamentais
+## Conceitos Fundamentais
 
 ### O que é uma Lojinha Online?
 No contexto deste sistema, uma "lojinha online" é uma plataforma de comércio eletrônico (e-commerce) simplificada que permite a um cliente realizar todo o fluxo de compra de maneira digital. O sistema é responsável por gerenciar a identificação do cliente, exibir o catálogo de produtos disponíveis, registrar o pedido, calcular os valores e coordenar a comunicação com um sistema externo para o processamento e validação do pagamento.
@@ -25,7 +25,7 @@ A arquitetura base escolhida para este projeto é a **Cliente-Servidor Monolíti
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 Neste repositório, você encontrará a seguinte estrutura de arquivos:
 
@@ -35,13 +35,13 @@ Neste repositório, você encontrará a seguinte estrutura de arquivos:
 
 ---
 
-## 🏗️ Principais Decisões Arquiteturais e Padrões de Projeto
+## Principais Decisões Arquiteturais e Padrões de Projeto
 
 * Inserir aqui a justificativa do uso do padrão Singleton no sistema de pagamento, conforme definido na divisão do trabalho).*
 
 ---
 
-## 🗄️ Diagrama Entidade-Relacionamento (DER)
+## Diagrama Entidade-Relacionamento (DER)
 
  O Diagrama Entidade-Relacionamento (DER) representa a estrutura de dados do sistema, definindo como as informações são organizadas, armazenadas e relacionadas dentro da lojinha online.
 
@@ -52,7 +52,7 @@ Neste repositório, você encontrará a seguinte estrutura de arquivos:
   <img src="Imagens/DiagramaLojinha_DER.drawio.png" alt="Diagrama DER" width="600">
 </p>
 
-## 📦 Entidades Principais
+## Entidades Principais
 
  O sistema é composto pelas seguintes entidades:
 
@@ -74,7 +74,7 @@ Ela armazena quais produtos foram comprados, em qual quantidade e por qual valor
 
 ---
 
-## 🔗 Relacionamentos e Cardinalidades
+## Relacionamentos e Cardinalidades
 
  O DER define como essas entidades se conectam:
 
@@ -89,7 +89,7 @@ Um produto pode estar presente em vários pedidos diferentes.
 
 ---
 
-## 🔄 Relacionamento Muitos-para-Muitos
+## Relacionamento Muitos-para-Muitos
 
  O relacionamento entre Pedido e Produto é do tipo muitos-para-muitos, já que um pedido pode conter vários produtos e, ao mesmo tempo, um produto pode estar presente em diversos pedidos. Para resolver essa relação, foi criada a entidade Item do Pedido, que atua como uma tabela intermediária.
  
@@ -97,7 +97,7 @@ Um produto pode estar presente em vários pedidos diferentes.
 
 ---
 
-## 🧠 Decisões de Modelagem
+## Decisões de Modelagem
 
  Algumas decisões importantes foram tomadas durante a construção do DER:
 
