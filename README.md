@@ -37,8 +37,25 @@ Neste repositório, você encontrará a seguinte estrutura de arquivos:
 
 ## Principais Decisões Arquiteturais e Padrões de Projeto
 
-* Inserir aqui a justificativa do uso do padrão Singleton no sistema de pagamento, conforme definido na divisão do trabalho).
+### Uso do Padrão Singleton
 
+O padrão de projeto Singleton foi aplicado na classe `PagamentoService`, responsável pela comunicação com o sistema externo de pagamento.
+
+Esse padrão garante que exista apenas uma única instância dessa classe durante toda a execução do sistema.
+
+A utilização do Singleton é importante nesse contexto porque:
+
+- Evita a criação de múltiplas instâncias responsáveis pelo processamento de pagamento;
+- Garante um controle centralizado das operações de pagamento;
+- Simula de forma mais realista um gateway de pagamento externo, que normalmente possui uma única conexão ativa.
+
+A implementação foi realizada utilizando:
+
+- Construtor privado, impedindo a criação de instâncias externas;
+- Uma variável estática para armazenar a única instância;
+- Um método público `getInstance()` que retorna essa instância.
+
+Dessa forma, todo o sistema utiliza a mesma instância de `PagamentoService`, garantindo consistência e controle no processamento dos pagamentos.
 ---
 
 ## Descrição do Fluxo do Diagrama de Atividades
