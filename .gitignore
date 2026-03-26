@@ -1,0 +1,40 @@
+# Arquivos de classe compilados
+*.class
+
+# Diretórios de build/saída
+bin/
+out/
+build/
+target/
+
+# Arquivos de log
+*.log
+
+# Arquivos empacotados
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Logs de crash da máquina virtual Java
+hs_err_pid*
+
+# Configurações de IDEs (IntelliJ, Eclipse, VS Code, etc.)
+.idea/
+*.iml
+*.iws
+.classpath
+.project
+.settings/
+.vscode/
+
+# Arquivos de sistema operacional (Mac/Windows)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
