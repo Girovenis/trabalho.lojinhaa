@@ -39,24 +39,28 @@ Neste repositório, você encontrará a seguinte estrutura de arquivos:
 
 ### Uso do Padrão Singleton
 
-O padrão de projeto Singleton foi aplicado na classe `PagamentoService`, responsável pela comunicação com o sistema externo de pagamento.
+Para a parte de pagamento do sistema, utilizei o padrão de projeto **Singleton** na classe `PagamentoService`.
 
-Esse padrão garante que exista apenas uma única instância dessa classe durante toda a execução do sistema.
+A ideia foi garantir que exista apenas **uma única instância** dessa classe durante toda a execução do programa. Isso faz sentido porque o serviço de pagamento simula um sistema externo, e normalmente esse tipo de sistema trabalha com uma única conexão centralizada.
 
-A utilização do Singleton é importante nesse contexto porque:
+### Por que escolhi usar Singleton?
 
-- Evita a criação de múltiplas instâncias responsáveis pelo processamento de pagamento;
-- Garante um controle centralizado das operações de pagamento;
-- Simula de forma mais realista um gateway de pagamento externo, que normalmente possui uma única conexão ativa.
+- Evita criar várias instâncias desnecessárias para processar pagamentos  
+- Mantém o controle do pagamento em um único ponto do sistema  
+- Deixa o projeto mais organizado e próximo de um cenário real  
 
-A implementação foi realizada utilizando:
+### Como implementei
 
-- Construtor privado, impedindo a criação de instâncias externas;
-- Uma variável estática para armazenar a única instância;
-- Um método público `getInstance()` que retorna essa instância.
+A implementação foi feita de forma simples e eficiente:
 
-Dessa forma, todo o sistema utiliza a mesma instância de `PagamentoService`, garantindo consistência e controle no processamento dos pagamentos.
+- Construtor privado → impede que outras classes criem instâncias diretamente  
+- Variável estática → armazena a única instância da classe  
+- Método `getInstance()` → responsável por criar (se necessário) e retornar essa instância  
+
+Com isso, sempre que o sistema precisa processar um pagamento, ele usa a mesma instância do serviço.
+
 ---
+
 
 ## Descrição do Fluxo do Diagrama de Atividades
 
